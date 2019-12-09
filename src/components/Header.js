@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import useInterval from './utils/UseInterval';
 
 function Header() {
@@ -37,13 +37,13 @@ function Header() {
   useInterval(() => setQuote(getQuote()), 10000);
 
   const getToday = () =>
-    `${days[date.getDay()]}, ${months[date.getMonth()]} ${date.getDay()}`;
+    `${days[date.getDay()]}, ${months[date.getMonth()]} ${date.getDate()}`;
   const countDown = () => `${date.getHours()} : ${date.getMinutes()} : ${date.getSeconds()}`;
   
 
   return (
     <div>
-      <h1 className="display-3">{getToday()}</h1>
+      <h1 className="display-4">{getToday()}</h1>
       <h1 className="display-4">{countDown()}</h1>
       <div className="bg-light border border-secondary">
         <div className="bg-secondary" style={{ height: '24px', width: `${date.getHours()/24 * 100}%` }}></div>
