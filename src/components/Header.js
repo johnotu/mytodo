@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import useInterval from './utils/UseInterval';
+import useInterval from '../utils/UseInterval';
 
 function Header() {
   const days = ['Sun', 'Mon', 'Tue', 'Wed', 'Thur', 'Fri', 'Sat'];
