@@ -45,8 +45,8 @@ function Header() {
     <div>
       <h1 className="display-4">{getToday()}</h1>
       <h1 className="display-4">{countDown()}</h1>
-      <div className="bg-light border border-secondary">
-        <div className="bg-secondary" style={{ height: '24px', width: `${date.getHours()/24 * 100}%` }}></div>
+      <div className="bg-light border border-secondary rounded">
+        <div className="bg-secondary rounded-sm" style={{ height: '24px', width: `${date.getHours()/24 * 100}%` }}></div>
       </div>
   <small>{quote}</small>
 

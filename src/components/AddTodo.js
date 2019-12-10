@@ -121,6 +121,7 @@ const AddTodo = () => {
               id="weekend-radio"
               name="todo-interval"
               value="weekends"
+              onChange={handleRepeatInterval}
             />
             <label className="form-check-label" htmlFor="weekend-radio">
               Weekend
